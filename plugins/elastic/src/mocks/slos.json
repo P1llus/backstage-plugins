@@ -1,0 +1,95 @@
+{
+  "page": 1,
+  "perPage": 2,
+  "total": 384,
+  "results": [
+    {
+      "id": "sloidtest1",
+      "name": "slonametest1",
+      "description": "",
+      "indicator": {
+        "type": "sli.kql.custom",
+        "params": {
+          "index": "metrics-*:traces-apm-*",
+          "filter": "service.name : testservice AND transaction.type: \"testtype\" ",
+          "good": "http.response.status_code<500",
+          "total": "http.response.status_code :*",
+          "timestampField": "@timestamp"
+        }
+      },
+      "budgetingMethod": "occurrences",
+      "timeWindow": {
+        "duration": "7d",
+        "type": "rolling"
+      },
+      "objective": {
+        "target": 0.99
+      },
+      "tags": ["testtag1", "testtag2"],
+      "groupBy": "host.hostname",
+      "settings": {
+        "syncDelay": "1m",
+        "frequency": "1m"
+      },
+      "revision": 1,
+      "enabled": true,
+      "createdAt": "2023-09-26T14:52:57.861Z",
+      "updatedAt": "2023-09-26T14:52:57.861Z",
+      "instanceId": "sloshosttest1.local",
+      "summary": {
+        "errorBudget": {
+          "initial": 0.01,
+          "consumed": 0,
+          "remaining": 1,
+          "isEstimated": false
+        },
+        "sliValue": 1,
+        "status": "HEALTHY"
+      }
+    },
+    {
+      "id": "sloidtest2",
+      "name": "slotestname2",
+      "description": "",
+      "indicator": {
+        "type": "sli.kql.custom",
+        "params": {
+          "index": "metrics-*:traces-apm-*",
+          "filter": "service.name : testservice AND transaction.type: \"testtype\"",
+          "good": "http.response.status_code<500",
+          "total": "http.response.status_code :*",
+          "timestampField": "@timestamp"
+        }
+      },
+      "budgetingMethod": "occurrences",
+      "timeWindow": {
+        "duration": "7d",
+        "type": "rolling"
+      },
+      "objective": {
+        "target": 0.99
+      },
+      "tags": ["testtag3", "testtag4"],
+      "groupBy": "host.hostname",
+      "settings": {
+        "syncDelay": "1m",
+        "frequency": "1m"
+      },
+      "revision": 1,
+      "enabled": true,
+      "createdAt": "2023-09-26T14:52:57.861Z",
+      "updatedAt": "2023-09-26T14:52:57.861Z",
+      "instanceId": "slohosttest2.local",
+      "summary": {
+        "errorBudget": {
+          "initial": 0.01,
+          "consumed": 0,
+          "remaining": 1,
+          "isEstimated": false
+        },
+        "sliValue": 1,
+        "status": "HEALTHY"
+      }
+    }
+  ]
+}

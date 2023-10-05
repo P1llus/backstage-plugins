@@ -1,0 +1,44 @@
+{
+  "id": "sloidtest",
+  "name": "slonametest",
+  "description": "slodesctest",
+  "indicator": {
+    "type": "sli.kql.custom",
+    "params": {
+      "index": "metrics-*:traces-apm-*",
+      "filter": "service.name : testservice AND transaction.type: testtype",
+      "good": "http.response.status_code<500",
+      "total": "http.response.status_code :*",
+      "timestampField": "@timestamp"
+    }
+  },
+  "budgetingMethod": "occurrences",
+  "timeWindow": {
+    "duration": "7d",
+    "type": "rolling"
+  },
+  "objective": {
+    "target": 0.99
+  },
+  "tags": ["testtag1", "testtag2"],
+  "groupBy": "host.name",
+  "settings": {
+    "syncDelay": "1m",
+    "frequency": "1m"
+  },
+  "revision": 1,
+  "enabled": true,
+  "createdAt": "2023-09-26T14:52:57.861Z",
+  "updatedAt": "2023-09-26T14:52:57.861Z",
+  "instanceId": "testhost.local",
+  "summary": {
+    "sliValue": 0.989362,
+    "errorBudget": {
+      "initial": 0.01,
+      "consumed": 1.0638,
+      "remaining": -0.0638,
+      "isEstimated": false
+    },
+    "status": "VIOLATED"
+  }
+}

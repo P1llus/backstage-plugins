@@ -1,0 +1,29 @@
+{
+  "failure_rate": {
+    "value": 0.9977246871444824
+  },
+  "timeseries": {
+    "buckets": [
+      {
+        "key_as_string": "2023-09-29T15:10:00.000Z",
+        "key": 1696000200000,
+        "doc_count": 167,
+        "throughput": {
+          "value": 167
+        }
+      },
+      {
+        "key_as_string": "2023-09-29T15:11:00.000Z",
+        "key": 1696000260000,
+        "doc_count": 169,
+        "throughput": {
+          "value": 169
+        }
+      }
+    ]
+  },
+  "throughput": 123.21,
+  "latency": {
+    "value": 398430.11422070535
+  }
+}

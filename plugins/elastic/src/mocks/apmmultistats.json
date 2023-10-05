@@ -1,0 +1,70 @@
+{
+  "group_by_service_name": {
+    "doc_count_error_upper_bound": 0,
+    "sum_other_doc_count": 841,
+    "buckets": [
+      {
+        "key": "frontend-node",
+        "doc_count": 8790,
+        "throughput": 175,
+        "failure_rate": {
+          "value": 0.9977246871444824
+        },
+        "timeseries": {
+          "buckets": [
+            {
+              "key_as_string": "2023-09-29T15:10:00.000Z",
+              "key": 1696000200000,
+              "doc_count": 167,
+              "throughput": {
+                "value": 167
+              }
+            },
+            {
+              "key_as_string": "2023-09-29T15:11:00.000Z",
+              "key": 1696000260000,
+              "doc_count": 169,
+              "throughput": {
+                "value": 169
+              }
+            }
+          ]
+        },
+        "latency": {
+          "value": 398430.11422070535
+        }
+      },
+      {
+        "key": "productCatalogService",
+        "doc_count": 6965,
+        "throughput": 123,
+        "failure_rate": {
+          "value": 1
+        },
+        "timeseries": {
+          "buckets": [
+            {
+              "key_as_string": "2023-09-29T15:10:00.000Z",
+              "key": 1696000200000,
+              "doc_count": 132,
+              "throughput": {
+                "value": 132
+              }
+            },
+            {
+              "key_as_string": "2023-09-29T15:11:00.000Z",
+              "key": 1696000260000,
+              "doc_count": 131,
+              "throughput": {
+                "value": 131
+              }
+            }
+          ]
+        },
+        "latency": {
+          "value": 101843.12761020882
+        }
+      }
+    ]
+  }
+}
