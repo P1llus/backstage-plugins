@@ -14,7 +14,7 @@ The examples are very basic, and any visualization is not restricted to a specif
 1. Clone this repository (https://github.com/p1llus/elastic-backstage-plugins).
 2. Run `yarn install` in the root of the project.
 3. Ensure that you have the stack running somewhere with all relevant things you want to test (currently only SLO).
-4. Modify the annotations in `./examples/test.yaml` file. There is one `slo-id` annotation for the examples website, and a `slo-kql` for the guest team entity for testing purposes. This should match what is running on your own elastic stack.
+4. Modify the annotations in `./examples/test.yaml` file. A list of annotations required can be found in the [Elastic (Frontend UI)](https://github.com/p1llus/elastic-backstage-plugins/tree/main/plugins/elastic) readme.
 5. Create a `app-config.local.yml` in the root of the project, and fill out the relevant configuration
 
 Example:
