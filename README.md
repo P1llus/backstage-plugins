@@ -1,4 +1,4 @@
-# [P1llus Backstage Plugin](https://github.com/p1llus/elastic-backstage-plugins)
+# [Backstage Plugins](https://github.com/p1llus/elastic-backstage-plugins)
 
 Currently 3 plugins are hosted here each with their own readme:
 
