@@ -138,7 +138,7 @@ export const ElasticApmTable = () => {
   if (!isElasticApmQueryAvailable(entity)) {
     return (
       <InfoCard title={pageTitle}>
-        <Typography component={'span'} variant="body1">
+        <Typography component='span' variant="body1">
           <MissingAnnotationEmptyState
             annotation={ELASTICSEARCH_APM_QUERY_ANNOTATION}
           />
