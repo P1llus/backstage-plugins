@@ -47,4 +47,4 @@ auth:
         clientSecret: Github APP secret
 ```
 
-6. Run `yarn dev` and visit to test [SLO TABLE](http://localhost:3000/catalog/default/group/guests/slo) and [SLO Gauge](http://localhost:3000/catalog/default/component/example-website).
+6. Run `yarn start` inside ./plugins/elastic and visit [UI TESTS](http://localhost:3000/) to test the UI components. You can also run `yarn dev` in the root of the project to check entities defined in ./examples/test.yaml, you can visit either the [GROUP](http://localhost:3000/catalog/default/group/guests) entity or the [WEBSITE](http://localhost:3000/catalog/default/component/example-website) entity.
