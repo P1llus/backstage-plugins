@@ -1,4 +1,4 @@
-# [P1llus Backstage Plugin](https://github.com/p1llus/elastic-backstage-plugins)
+# [Backstage Plugins](https://github.com/p1llus/elastic-backstage-plugins)
 
 Currently 3 plugins are hosted here each with their own readme:
 
@@ -17,7 +17,7 @@ The examples are very basic, and any visualization is not restricted to a specif
 1. Clone this repository (https://github.com/p1llus/backstage-plugins).
 2. Run `yarn install` in the root of the project.
 3. Ensure that you have the stack running somewhere with all relevant things you want to test (currently only SLO).
-4. Modify the annotations in `./examples/test.yaml` file. A list of annotations required can be found in the [Elastic (Frontend UI)](https://github.com/p1llus/elastic-backstage-plugins/tree/main/plugins/elastic) readme.
+4. Modify the annotations in `./examples/test.yaml` file. A list of annotations required can be found in the [Elastic (Frontend UI)](https://github.com/p1llus/backstage-plugins/tree/main/plugins/elastic) readme.
 5. Create a `app-config.local.yml` in the root of the project, and fill out the relevant configuration
 
 Example:
