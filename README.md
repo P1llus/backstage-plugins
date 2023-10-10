@@ -3,7 +3,7 @@
 Currently 3 plugins are hosted here each with their own readme:
 
 **Elastic Stack Plugins (Unofficial)**
-
+**Work In Progress, no NPM package has been generated yet**
 A unofficial set of plugins for the Elastic Stack, this is **NOT** covered or supported by the Elastic Company
 - [Elastic (Frontend UI)](https://github.com/p1llus/elastic-backstage-plugins/tree/main/plugins/elastic)
 - [Elastic Common (Common TS types and methods shared between other plugins)](https://github.com/p1llus/elastic-backstage-plugins/tree/main/plugins/elastic-common)
