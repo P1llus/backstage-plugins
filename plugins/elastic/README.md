@@ -1,6 +1,8 @@
 # Elastic Backstage Plugin (Frontend)
 
-Welcome to the [Elastic](https://www.elastic.co/) frontend plugin for Backstage.
+Welcome to the Unofficial [Elastic](https://www.elastic.co/) frontend plugin for Backstage.
+
+This plugin is **NOT** covered by any Elastic support contracts or SLA's.
 
 The scope of this plugin is currently to retrieve SLO information from Kibana about any entity in Backstage with the correct annotations, but once finalized there are more usecases which will be added.
 

@@ -1,6 +1,8 @@
 # Elastic Backstage Plugin (Backend)
 
-Welcome to the [Elastic](https://www.elastic.co/) backend plugin for Backstage.
+Welcome to the Unofficial [Elastic](https://www.elastic.co/) backend plugin for Backstage.
+
+This plugin is **NOT** covered by any Elastic support contracts or SLA's
 
 The scope of this plugin is currently to provide a backend proxy layer for the frontend plugin to communicate with.
 
