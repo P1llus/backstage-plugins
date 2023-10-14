@@ -21,3 +21,10 @@ export {
   EntityElasticSloCard,
   EntityElasticSloTableContent,
 } from './plugin';
+export {
+  isElasticInstanceAvailable,
+  isElasticSloIdAvailable,
+  isElasticSloQueryAvailable,
+  isElasticApmNameAvailable,
+  isElasticApmQueryAvailable,
+} from './helpers';

@@ -22,6 +22,6 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - run: yarn prettier:check
-      - run: yarn tsc:all
+      - run: yarn tsc:full
       - run: yarn build:all
       - run: yarn test:all

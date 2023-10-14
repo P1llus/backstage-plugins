@@ -14,4 +14,13 @@
  * limitations under the License.
  */
 
-export * from './service';
+export {
+  DefaultElasticInfoProvider,
+  ElasticConfig,
+} from './elasticInfoProvider';
+export type {
+  ElasticInfoProvider,
+  ElasticInstanceConfig,
+} from './elasticInfoProvider';
+export { createRouter } from './router';
+export type { RouterOptions } from './router';

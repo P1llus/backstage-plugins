@@ -35,10 +35,8 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import useAsync from 'react-use/lib/useAsync';
 import { elasticApiRef } from '../../api';
-import {
-  isElasticApmNameAvailable,
-  ELASTICSEARCH_APM_SERVICE_NAME_ANNOTATION,
-} from '@p1llus/backstage-plugin-elastic-common';
+import { ELASTICSEARCH_APM_SERVICE_NAME_ANNOTATION } from '@p1llus/backstage-plugin-elastic-common';
+import { isElasticApmNameAvailable } from '../../helpers';
 import { stringifyEntityRef } from '@backstage/catalog-model';
 import { useEntity } from '@backstage/plugin-catalog-react';
 import { useApi } from '@backstage/core-plugin-api';

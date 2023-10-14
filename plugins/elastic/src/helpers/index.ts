@@ -14,4 +14,12 @@
  * limitations under the License.
  */
 
-export { setStatus, createLink } from './helpers';
+export {
+  setStatus,
+  createLink,
+  isElasticInstanceAvailable,
+  isElasticSloIdAvailable,
+  isElasticSloQueryAvailable,
+  isElasticApmNameAvailable,
+  isElasticApmQueryAvailable,
+} from './helpers';

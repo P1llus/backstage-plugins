@@ -68,7 +68,7 @@ import {
   isElasticApmQueryAvailable,
   isElasticSloIdAvailable,
   isElasticSloQueryAvailable,
-} from '@p1llus/backstage-plugin-elastic-common';
+} from '@p1llus/backstage-plugin-elastic';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -230,7 +230,7 @@ const websiteEntityPage = (
             </Grid>
           </Grid>
         </EntitySwitch.Case>
-        {/*_ ... _*/}
+        {/* _ ... _*/}
       </EntitySwitch>
     </EntityLayout.Route>
 

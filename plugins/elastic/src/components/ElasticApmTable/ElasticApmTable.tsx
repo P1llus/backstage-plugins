@@ -32,9 +32,9 @@ import { stringifyEntityRef } from '@backstage/catalog-model';
 import { elasticApiRef } from '../../api';
 import {
   ELASTICSEARCH_APM_QUERY_ANNOTATION,
-  isElasticApmQueryAvailable,
   ApmServiceBucket,
 } from '@p1llus/backstage-plugin-elastic-common';
+import { isElasticApmQueryAvailable } from '../../helpers';
 
 const useStyles = makeStyles(theme => ({
   root: {

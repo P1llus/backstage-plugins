@@ -26,57 +26,6 @@ import {
 } from './constants';
 
 /**
- * Utility function to determine if the annotation exist and it includes both a instance name and the second parameter which is always required.
- * The third entry in the array is optional.
- * @public
- */
-const validateAnnotation = (value?: string) => {
-  if (!value) return false;
-  return value.split('/').length >= 1;
-};
-
-/**
- * Utility function to determine if the given entity has an instance annotation.
- * @public
- */
-export const isElasticInstanceAvailable = (entity: Entity) =>
-  Boolean(entity?.metadata?.annotations?.[ELASTIC_INSTANCE_ANNOTATION]);
-
-/**
- * Utility function to determine if the given entity has a supported SLO ID annotation.
- * @public
- */
-export const isElasticSloIdAvailable = (entity: Entity) =>
-  validateAnnotation(entity.metadata?.annotations?.[KIBANA_SLO_ID_ANNOTATION]);
-
-/**
- * Utility function to determine if the given entity has a supported SLO KQL Query annotation.
- * @public
- */
-export const isElasticSloQueryAvailable = (entity: Entity) =>
-  validateAnnotation(
-    entity.metadata?.annotations?.[KIBANA_SLO_QUERY_ANNOTATION],
-  );
-
-/**
- * Utility function to determine if the given entity has a supported SLO ID annotation.
- * @public
- */
-export const isElasticApmNameAvailable = (entity: Entity) =>
-  validateAnnotation(
-    entity.metadata?.annotations?.[ELASTICSEARCH_APM_SERVICE_NAME_ANNOTATION],
-  );
-
-/**
- * Utility function to determine if the given entity has a supported SLO KQL Query annotation.
- * @public
- */
-export const isElasticApmQueryAvailable = (entity: Entity) =>
-  validateAnnotation(
-    entity.metadata?.annotations?.[ELASTICSEARCH_APM_QUERY_ANNOTATION],
-  );
-
-/**
  * Utility function to get the value of an entity SLO ID annotation.
  * @public
  */

@@ -27,10 +27,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import useAsync from 'react-use/lib/useAsync';
 import { createLink } from '../../helpers/helpers';
 import { elasticApiRef } from '../../api';
-import {
-  isElasticSloIdAvailable,
-  KIBANA_SLO_ID_ANNOTATION,
-} from '@p1llus/backstage-plugin-elastic-common';
+import { KIBANA_SLO_ID_ANNOTATION } from '@p1llus/backstage-plugin-elastic-common';
+import { isElasticSloIdAvailable } from '../../helpers';
 import { stringifyEntityRef } from '@backstage/catalog-model';
 import { useEntity } from '@backstage/plugin-catalog-react';
 import { useApi } from '@backstage/core-plugin-api';

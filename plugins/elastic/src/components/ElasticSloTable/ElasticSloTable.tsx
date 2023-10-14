@@ -33,10 +33,10 @@ import { setStatus, createLink } from '../../helpers/helpers';
 import { stringifyEntityRef } from '@backstage/catalog-model';
 import { elasticApiRef } from '../../api';
 import {
-  isElasticSloQueryAvailable,
   KIBANA_SLO_QUERY_ANNOTATION,
   SloProps,
 } from '@p1llus/backstage-plugin-elastic-common';
+import { isElasticSloQueryAvailable } from '../../helpers';
 
 const pageTitle = 'Service Level Objectives';
 
