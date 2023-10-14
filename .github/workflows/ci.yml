@@ -3,8 +3,6 @@ name: Plugin Tests
 on:
   pull_request:
     branches: ['main']
-  push:
-    branches: ['main']
 
 jobs:
   build:
@@ -20,8 +18,15 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: yarn --frozen-lockfile
-      - run: yarn prettier:check
-      - run: yarn tsc:full
-      - run: yarn lint:all
-      - run: yarn build:all
-      - run: yarn test:all
+      - name: yarn lerna bootstrap
+        run: yarn lerna bootstrap
+      - name: Prettier check
+        run: yarn prettier:check
+      - name: yarn lint
+        run: yarn lint:all
+      - name: yarn tcs
+        run: yarn tsc:full
+      - name: yarn test
+        run: yarn test:all
+      - name: yarn build
+        run: yarn build:all
