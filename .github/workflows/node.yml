@@ -3,6 +3,8 @@ name: Plugin Tests
 on:
   pull_request:
     branches: ['main']
+  push:
+    branches: ['main']
 
 jobs:
   build:
@@ -21,4 +23,5 @@ jobs:
         run: yarn --frozen-lockfile
       - run: yarn prettier:check
       - run: yarn tsc:all
+      - run: yarn build:all
       - run: yarn test:all
