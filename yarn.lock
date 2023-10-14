@@ -8824,7 +8824,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     picomatch "^2.0.4"
 
 "app@link:packages/app":
-  version "0.0.0"
+  version "0.0.1"
   dependencies:
     "@backstage/app-defaults" "^1.4.3"
     "@backstage/catalog-model" "^1.4.2"
@@ -8853,9 +8853,8 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/theme" "^0.4.2"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
-    "@p1llus/backstage-plugin-elastic" "^0.1.0"
-    "@p1llus/backstage-plugin-elastic-backend" "^0.1.0"
-    "@p1llus/backstage-plugin-elastic-common" "^0.1.0"
+    "@p1llus/backstage-plugin-elastic" "^0.0.3"
+    "@p1llus/backstage-plugin-elastic-common" "^0.0.3"
     history "^5.0.0"
     react "^17.0.2"
     react-dom "^17.0.2"

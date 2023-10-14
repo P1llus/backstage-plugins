@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "bundled": true,
   "backstage": {
@@ -43,9 +43,8 @@
     "@backstage/plugin-techdocs-react": "^1.1.11",
     "@backstage/plugin-user-settings": "^0.7.10",
     "@backstage/theme": "^0.4.2",
-    "@p1llus/backstage-plugin-elastic": "^0.0.1",
-    "@p1llus/backstage-plugin-elastic-backend": "^0.0.1",
-    "@p1llus/backstage-plugin-elastic-common": "^0.0.1",
+    "@p1llus/backstage-plugin-elastic": "^0.0.3",
+    "@p1llus/backstage-plugin-elastic-common": "^0.0.3",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "history": "^5.0.0",
