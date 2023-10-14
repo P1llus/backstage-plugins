@@ -1,6 +1,6 @@
 {
   "name": "backend",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "main": "dist/index.cjs.js",
   "types": "src/index.ts",
   "private": true,
@@ -33,7 +33,7 @@
     "@backstage/plugin-search-backend-module-pg": "^0.5.13",
     "@backstage/plugin-search-backend-node": "^1.2.8",
     "@backstage/plugin-techdocs-backend": "^1.7.1",
-    "@p1llus/backstage-plugin-elastic-backend": "^0.0.3",
+    "@p1llus/backstage-plugin-elastic-backend": "^0.0.5",
     "app": "link:../app",
     "better-sqlite3": "^8.0.0",
     "dockerode": "^3.3.1",

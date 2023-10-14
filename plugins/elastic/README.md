@@ -37,8 +37,10 @@ The SLO card react component is called `EntityElasticSloCard`, and can be added 
 
 ```tsx
 // In packages/app/src/components/catalog/EntityPage.tsx
-import { EntityElasticSloCard } from '@p1llus/backstage-plugin-elastic';
-import { isElasticSloIdAvailable } from '@p1llus/backstage-plugin-elastic-common';
+import {
+  EntityElasticSloCard,
+  isElasticSloIdAvailable,
+} from '@p1llus/backstage-plugin-elastic';
 
 // You can add the tab to any number of pages, the service page is shown as an
 // example here
@@ -125,8 +127,10 @@ The SLO Table react component is called `EntityElasticSloTableContent`, and can 
 
 ```tsx
 // In packages/app/src/components/catalog/EntityPage.tsx
-import { EntityElasticSloTableContent } from '@p1llus/backstage-plugin-elastic';
-import { isElasticSloQueryAvailable } from '@p1llus/backstage-plugin-elastic-common';
+import {
+  EntityElasticSloTableContent,
+  isElasticSloQueryAvailable,
+} from '@p1llus/backstage-plugin-elastic';
 
 // You can add the tab to any number of pages, the service page is shown as an
 // example here
@@ -211,8 +215,10 @@ The APM card react component is called `EntityElasticApmCard`, and can be added 
 
 ```tsx
 // In packages/app/src/components/catalog/EntityPage.tsx
-import { EntityElasticApmCard } from '@p1llus/backstage-plugin-elastic';
-import { isElasticApmNameAvailable } from '@p1llus/backstage-plugin-elastic-common';
+import {
+  EntityElasticApmCard,
+  isElasticApmNameAvailable,
+} from '@p1llus/backstage-plugin-elastic';
 
 // You can add the tab to any number of pages, the service page is shown as an
 // example here
@@ -299,8 +305,10 @@ The APM table react component is called `EntityElasticApmTableContent`, and can 
 
 ```tsx
 // In packages/app/src/components/catalog/EntityPage.tsx
-import { EntityElasticApmTableContent } from '@p1llus/backstage-plugin-elastic';
-import { isElasticApmQueryAvailable } from '@p1llus/backstage-plugin-elastic-common';
+import {
+  EntityElasticApmTableContent,
+  isElasticApmQueryAvailable,
+} from '@p1llus/backstage-plugin-elastic';
 
 // You can add the tab to any number of pages, the service page is shown as an
 // example here
