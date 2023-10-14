@@ -18,16 +18,16 @@ describe('App', () => {
               allow_guests: true,
               elasticsearch: {
                 baseUrl: 'http://localhost:9200',
-                apiKey: 'testKey'
+                apiKey: 'testKey',
               },
               kibana: {
                 baseUrl: 'http://localhost:5601',
-                apiKey: 'testKey'
-              }
+                apiKey: 'testKey',
+              },
             },
             auth: {
-              environment: 'test'
-            }
+              environment: 'test',
+            },
           },
           context: 'test',
         },

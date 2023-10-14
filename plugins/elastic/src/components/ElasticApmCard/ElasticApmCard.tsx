@@ -127,7 +127,7 @@ const ApmCard = () => {
                 <Tooltip title="Average latency based on last 1 hour">
                   <Card>
                     <CardContent>
-                      <Typography component='span' variant="body2">
+                      <Typography component="span" variant="body2">
                         Latency
                       </Typography>
                       <Typography variant="h4">
@@ -144,11 +144,11 @@ const ApmCard = () => {
                 <Tooltip title="Average throughput from last 1 hour">
                   <Card>
                     <CardContent>
-                      <Typography component='span' variant="body2">
+                      <Typography component="span" variant="body2">
                         Throughput
                       </Typography>
                       <Typography variant="h4">
-                        {value.res.throughput} tpm
+                        {value.res.throughput.toFixed(2)} tpm
                       </Typography>
                     </CardContent>
                     <CardActions>
@@ -161,7 +161,7 @@ const ApmCard = () => {
                 <Tooltip title="The average rate of failures from last 1 hour">
                   <Card>
                     <CardContent>
-                      <Typography component='span' variant="body2">
+                      <Typography component="span" variant="body2">
                         Failure Rate
                       </Typography>
                       <Typography variant="h4">

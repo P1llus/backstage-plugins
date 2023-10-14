@@ -56,7 +56,7 @@ metadata:
   name: guests
   annotations:
     elastic/instance: default
-    elastic/slo-query: "slo.name: test*"
+    elastic/slo-query: 'slo.name: test*'
     elastic/apm-query: 'service.name'
 spec:
   type: team

@@ -1,11 +1,11 @@
 {
   "name": "@p1llus/backstage-plugin-elastic-backend",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "private": true,
   "license": "Apache-2.0",
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "access": "public",
     "main": "dist/index.cjs.js",
     "types": "dist/index.d.ts"
@@ -40,7 +40,7 @@
     "@backstage/errors": "^1.2.2",
     "@backstage/plugin-auth-node": "^0.3.1",
     "@backstage/plugin-catalog-node": "^1.4.5",
-    "@p1llus/backstage-plugin-elastic-common": "^0.1.0",
+    "@p1llus/backstage-plugin-elastic-common": "^0.0.1",
     "@types/express": "*",
     "express": "^4.17.1",
     "express-promise-router": "^4.1.0",

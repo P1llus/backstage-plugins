@@ -43,17 +43,19 @@ const app = createApp({
     SignInPage: props => {
       const configApi = useApi(configApiRef);
       if (configApi.getString('auth.environment') !== 'test') {
-        return (<SignInPage
-          {...props}
-          provider={{
-            id: 'github-auth-provider',
-            title: 'GitHub',
-            message: 'Sign in using GitHub',
-            apiRef: githubAuthApiRef,
-          }}
-        />)
+        return (
+          <SignInPage
+            {...props}
+            provider={{
+              id: 'github-auth-provider',
+              title: 'GitHub',
+              message: 'Sign in using GitHub',
+              apiRef: githubAuthApiRef,
+            }}
+          />
+        );
       }
-      return (<SignInPage {...props} providers={['guest']} align="center" />)
+      return <SignInPage {...props} providers={['guest']} align="center" />;
     },
   },
   bindRoutes({ bind }) {

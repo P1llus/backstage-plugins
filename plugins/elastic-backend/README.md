@@ -2,7 +2,7 @@
 
 Welcome to the Unofficial [Elastic](https://www.elastic.co/) backend plugin for Backstage.
 
-This plugin is **NOT** covered by any Elastic support contracts or SLA's
+This is **NOT** covered by any official support agreements with Elastic.
 
 The scope of this plugin is currently to provide a backend proxy layer for the frontend plugin to communicate with.
 
@@ -11,7 +11,9 @@ For more information about how to setup and configure the Elastic stack or simil
 The backend plugin is also dependant on the [elastic frontend](../elastic-frontend) plugin.
 
 ## Setup
+
 ### General
+
 1. Add your plugin to your current backstage backend:
 
 ```bash
@@ -48,6 +50,7 @@ export default async function createPlugin(
 ```
 
 3. Reference this in `packages/backend/src/index.ts`
+
 ```diff
 diff --git a/packages/backend/src/index.ts b/packages/backend/src/index.ts
 index 1c08288..6ff3807 100644
@@ -66,7 +69,7 @@ index 1c08288..6ff3807 100644
    const searchEnv = useHotMemoize(module, () => createEnv('search'));
    const appEnv = useHotMemoize(module, () => createEnv('app'));
 +  const elasticEnv = useHotMemoize(module, () => createEnv('elastic'));
- 
+
    const apiRouter = Router();
    apiRouter.use('/catalog', await catalog(catalogEnv));
 @@ -93,6 +95,7 @@ async function main() {
@@ -74,7 +77,7 @@ index 1c08288..6ff3807 100644
    apiRouter.use('/proxy', await proxy(proxyEnv));
    apiRouter.use('/search', await search(searchEnv));
 +  apiRouter.use('/elastic', await elastic(elasticEnv));
- 
+
    // Add backends ABOVE this line; this 404 handler is the catch-all fallback
    apiRouter.use(notFoundHandler());
 ```
@@ -92,6 +95,7 @@ The backend plugin exposes a few different config parameters under the top field
 - `elastic.instances[].elasticsearch.apiKey`: The API Key used to authenticate with the Kibana instance.
 
 Example:
+
 ```yaml
 elastic:
   allow_guests: true

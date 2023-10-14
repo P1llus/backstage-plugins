@@ -180,7 +180,7 @@ export const SloTable = () => {
               View In Kibana
             </Link>
           );
-        } 
+        }
         return <Link to="">URL not found</Link>;
       },
     },
@@ -213,7 +213,7 @@ export const ElasticSloTable = () => {
   if (!isElasticSloQueryAvailable(entity)) {
     return (
       <InfoCard title={pageTitle}>
-        <Typography component='span' variant="body1">
+        <Typography component="span" variant="body1">
           <MissingAnnotationEmptyState
             annotation={KIBANA_SLO_QUERY_ANNOTATION}
           />

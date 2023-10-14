@@ -78,7 +78,6 @@ The `elastic/slo-id` annotation has 1 mandatory and 1 optional field, separated 
 - `SLO ID`: This is the ID of your SLO created in Kibana, for example by viewing the SLO in the Kibana UI will show the ID of the relevant SLO.
 - `SLO Instance ID (optional)`: When a SLO is configured in Kibana, there is an option to `partition` on a choosen field, for example a hostname field. When this is performed, a SLO is created per unique hostname value found, but with the same SLO ID, in these cases the Instance ID is necessary to tell exactly which SLO we want to collect. This can also be seen in the URL when visiting the SLO itself in Kibana. Please see example below.
 
-
 Config example from backend plugin:
 
 ```yaml

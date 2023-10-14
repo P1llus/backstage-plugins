@@ -67,7 +67,7 @@ import {
   isElasticApmNameAvailable,
   isElasticApmQueryAvailable,
   isElasticSloIdAvailable,
-  isElasticSloQueryAvailable
+  isElasticSloQueryAvailable,
 } from '@p1llus/backstage-plugin-elastic-common';
 
 const techdocsContent = (
@@ -137,17 +137,17 @@ const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
     {entityWarningContent}
     <EntitySwitch>
-        <EntitySwitch.Case if={isElasticApmNameAvailable}>
-          <Grid item sm={8}>
-            <EntityElasticApmCard />
-          </Grid>
-        </EntitySwitch.Case>
-        <EntitySwitch.Case if={isElasticSloIdAvailable}>
-          <Grid item sm={6}>
-            <EntityElasticSloCard />
-          </Grid>
-        </EntitySwitch.Case>
-      </EntitySwitch>
+      <EntitySwitch.Case if={isElasticApmNameAvailable}>
+        <Grid item sm={8}>
+          <EntityElasticApmCard />
+        </Grid>
+      </EntitySwitch.Case>
+      <EntitySwitch.Case if={isElasticSloIdAvailable}>
+        <Grid item sm={6}>
+          <EntityElasticSloCard />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
     <Grid item md={6}>
       <EntityAboutCard variant="gridItem" />
     </Grid>
